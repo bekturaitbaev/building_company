@@ -13,11 +13,11 @@ parameters:
 
     mailer_transport: gmail
     mailer_host: smtp.gmail.com
-    mailer_user: aio.group.test@gmail.com
-    mailer_password: 123321AioGroup
+    mailer_user: aza@gmail.com
+    mailer_password: 123123
     locale:            ru
     # A secret key that's used to generate certain security-related tokens
-    secret:            sgfuesfh837rwydho$iesfb983@qoeiudapsohf9woai
+    secret:            sgfuesfh837rwydho$iesfb983@qoeiudapasdasdsohf9woai
 
     upload_dir: /uploads/media
     api_token_lifetime: 86400
