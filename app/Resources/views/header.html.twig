@@ -1,12 +1,43 @@
-
-<ul class="lang-menu">
-    <li><a href="{{  path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'ky'}))}}">Kyrgyz</a></li>
-    <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'ru'})) }}">Russian</a></li>
-    <li><a href="{{  path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'}))}}">English</a></li>
-</ul>
-
-<ul>
-    {% if app.user %}
-    <li><a href="{{ path('fos_user_security_logout') }}">Выйти</a></li>
-    {% endif %}
-</ul>
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">     
+        <p class="pull-left hidden-xs"><i class="fa fa-clock-o"></i><span>Пн - Сб: 8:00 - 18:00. Вс: Выходной</span></p>
+        <p class="pull-right"><i class="fa fa-phone"></i>Тел: +996700 000 000</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- start header -->
+  <header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="{{ asset('public/img/logo.png') }}" alt="logo"/></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{{ path('home_page') }}">Главная</a></li> 
+             <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">О компании <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ path('about_page') }}">Company</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">News</a></li> 
+                            <li><a href="#">Investors</a></li>
+                        </ul>
+                    </li> 
+            <li><a href="#">Услуги</a></li>
+                        <li><a href="{{ path('contacts_page') }}">Контакты</a></li>
+                        <li><a href="#">Преимущества</a></li>
+                        <li><a href="{{ path('account_page') }}">Личный кабинет</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  </header>

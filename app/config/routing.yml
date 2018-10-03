@@ -1,3 +1,18 @@
+account:
+    resource: "@AccountBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+contacts:
+    resource: "@ContactsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+about:
+    resource: "@AboutBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 #category:
 #    resource: "@CategoryBundle/Controller/"
 #    type:     annotation

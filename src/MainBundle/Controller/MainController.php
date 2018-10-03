@@ -12,13 +12,13 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class MainController extends Controller
 {
     /**
-     * @Route("", name="main_index")
+     * @Route("", name="home_page")
      * @Template()
      */
 
     public function indexAction()
     {
-        return array('hello_world'=>'Hello World!');
-//        return $this->render('MainBundle:Main:index.html.twig', array('hello_world'=>'Hello World!'));
+        // return array('hello_world'=>'Hello World!');
+       return $this->render('MainBundle:Main:index.html.twig', array('hello_world'=>'Hello World!'));
     }
 }
