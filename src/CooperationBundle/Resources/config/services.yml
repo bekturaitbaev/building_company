@@ -1,0 +1,4 @@
+services:
+#    cooperation.example:
+#        class: CooperationBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

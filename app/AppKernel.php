@@ -67,6 +67,10 @@ class AppKernel extends Kernel
             new AboutBundle\AboutBundle(),
             new ContactsBundle\ContactsBundle(),
             new AccountBundle\AccountBundle(),
+            new CooperationBundle\CooperationBundle(),
+            new DiplomasBundle\DiplomasBundle(),
+            new WhyChooseBundle\WhyChooseBundle(),
+            new FaqBundle\FaqBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

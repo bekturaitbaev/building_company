@@ -1,3 +1,23 @@
+faq:
+    resource: "@FaqBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+why_choose:
+    resource: "@WhyChooseBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+diplomas:
+    resource: "@DiplomasBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+cooperation:
+    resource: "@CooperationBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 account:
     resource: "@AccountBundle/Controller/"
     type:     annotation
