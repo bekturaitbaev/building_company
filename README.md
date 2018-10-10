@@ -1,4 +1,4 @@
-AiO CMS
+CMS
 ===
 
     composer install
